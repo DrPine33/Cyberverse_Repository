@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         saveFilePath = Application.dataPath + "/CompletedLevels.txt"; // Path to the save file
+        LoadCompletedLevels();
     }
 
     // Update is called once per frame
@@ -64,12 +65,7 @@ public class LevelManager : MonoBehaviour
     // Load completed levels from the text file
     private void LoadCompletedLevels()
     {
-        if (!File.Exists(saveFilePath))
-        {
-            // Create the file if it does not exist
-            File.Create(saveFilePath).Close();
-        }
-        else
+        if (File.Exists(saveFilePath))
         {
             using (StreamReader sr = new StreamReader(saveFilePath))
             {
@@ -80,6 +76,10 @@ public class LevelManager : MonoBehaviour
                     if (line.Contains("Level 1: Completed"))
                     {
                         isLevelOneComplete = true;
+                    }
+                    else if (line.Contains("Level 2: Completed"))
+                    {
+                        isLevelTwoComplete = true;
                     }
                     // Add more parsing logic for additional levels if needed
                 }
