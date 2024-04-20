@@ -13,12 +13,12 @@ public class LevelManager : MonoBehaviour
     public GameObject levelOneCompleteText;
     public GameObject levelTwoCompleteText;
 
-    private string saveFilePath = "Assets/CompletedLevels.txt"; // Path to the save file
+    private string saveFilePath;
 
     // Start is called before the first frame update
     void Start()
     {
-        LoadCompletedLevels(); // Load completed levels when the game starts
+        saveFilePath = Application.dataPath + "/CompletedLevels.txt"; // Path to the save file
     }
 
     // Update is called once per frame
