@@ -2,6 +2,7 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -35,6 +36,13 @@ public class PlayerInteract : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             dialogueManager.NextMessage(); // Trigger next message
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

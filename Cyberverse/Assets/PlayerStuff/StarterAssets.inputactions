@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "BackToMainMenu",
+                    "type": "Button",
+                    "id": "a80ce0f4-696e-4d9f-9649-f6fba156763a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -340,6 +349,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "NextMessage",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4be13f47-ae6e-4ad3-8bee-70118cf75321",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "BackToMainMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

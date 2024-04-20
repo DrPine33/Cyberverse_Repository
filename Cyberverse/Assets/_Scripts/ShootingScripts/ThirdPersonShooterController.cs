@@ -6,6 +6,7 @@ using StarterAssets;
 using Unity.VisualScripting;
 using JetBrains.Annotations;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonShooterController : MonoBehaviour
 {

@@ -16,6 +16,7 @@ namespace StarterAssets
         public bool shoot;
 		public bool interact;
 		public bool nextMessage;
+		public bool backToMainMenu;
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -66,6 +67,11 @@ namespace StarterAssets
         {
             NextMessageInput(value.isPressed);
         }
+		
+		public void BackToMainMenu(InputValue value)
+		{
+			BackToMainMenuInput(value.isPressed);
+		}
 #endif
 
 
@@ -108,6 +114,11 @@ namespace StarterAssets
         {
             nextMessage = newNextMessageState;
         }
+
+		public void BackToMainMenuInput(bool backToMainMenuState)
+		{
+			backToMainMenu = backToMainMenuState;
+		}
 
         private void OnApplicationFocus(bool hasFocus)
 		{
