@@ -6,14 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void LoadLevelOne()
+    public void LoadGameScene()
     {
-        SceneManager.LoadScene("Level-1");
-    }
-
-    public void LoadLevelTwo()
-    {
-        SceneManager.LoadScene("Level-2");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void MainMenuScene()

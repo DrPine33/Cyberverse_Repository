@@ -189,9 +189,9 @@ RectTransform:
   m_Father: {fileID: 4839690199628675565}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -26.5, y: -37.7}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -26.500061, y: 62.300003}
   m_SizeDelta: {x: -451, y: 111.9731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4341931486140797426
@@ -224,7 +224,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -235,7 +235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The message box for dialogue
+  m_Text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 --- !u!1 &6710834321795628494
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,3 +332,5 @@ MonoBehaviour:
   actorName: {fileID: 4919702229788784987}
   messageText: {fileID: 4059761936069087652}
   backgroundBox: {fileID: 4839690199628675565}
+  isActive: 0
+  questMarkers: []
